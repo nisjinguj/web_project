@@ -5,8 +5,13 @@ const Container = styled.div`
   width: 700px;
   height: 400px;
 
-  margin-top: 0;
+  margin: 0 auto; /* 수평 중앙 정렬 */
   margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 수직 중앙 정렬 */
 
   text-align: center;
 `;
@@ -16,6 +21,7 @@ const Img = styled.img`
   height: 100%;
 `;
 
+// 메인이미지와 타자연습 글씨
 function ManeImage() {
   return (
     <Container>
